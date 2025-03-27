@@ -8,7 +8,7 @@ identification:
 
 appearance: 
   page-mode: Normal
-  page-template: Theme Default
+  page-template: Standard
   template-options: 
   - '#DEFAULT#'
 
