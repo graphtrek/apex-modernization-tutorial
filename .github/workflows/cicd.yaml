@@ -15,9 +15,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Generate Semantic Version
+        id: version
+        run: echo "VERSION=$(date +'%Y.%m.%d').$GITHUB_RUN_NUMBER" >> $GITHUB_ENV
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: source-code
+          name: source-code-${{ env.VERSION }}
           path: .
           retention-days: 7
