@@ -107,7 +107,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_value_01=>'Modernization'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>6
-,p_version_scn=>15614477176396
+,p_version_scn=>15615863322151
 ,p_print_server_type=>'INSTANCE'
 ,p_file_storage=>'DB'
 ,p_is_pwa=>'Y'
@@ -1892,6 +1892,7 @@ wwv_flow_imp_page.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_protection_level=>'C'
 ,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<p>USER HELP</p>  ',
 '<p>To find data enter a search term into the search dialog, or click on the column headings to limit the records returned.</p>',
 '',
 '<p>You can perform numerous functions by clicking the <strong>Actions</strong> button. This includes selecting the columns that are displayed / hidden and their display sequence, plus numerous data and format functions.  You can also define additiona'
